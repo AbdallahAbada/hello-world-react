@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import { Introduction } from "./components/Introduction";
 import './App.css';
 
-function App() {
+
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className="my-photo" src="https://avatars.githubusercontent.com/u/95439358?v=4" alt="React Image" />
+      <Introduction className="jumbotron"
+        myName="Adallah Abada"
+        role="FronEnd Developer"
+        desc="I am a Front-End Developer from Cambridge, UK. I have experience in responsive CSS, JavaScript and React. Motivated to learn, grow, and contribute to team success through hard work and a strong passion for coding. I have just finished a bootcamp with Purple Beard"
+      />
     </div>
   );
 }

@@ -1,38 +1,57 @@
+body {
+  color: #fff;
+  background-image: url(./portfolio-background-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  column-gap: 0;
+  gap: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media screen and (max-width: 820px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .my-photo {
+    height: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.jumbotron {
+  /* border: #fff 2px solid; */
+  width: 600px;
+  margin: 10px 20px;
+  padding: 10px;
+}
+
+.my-photo {
+  height: 300px;
+  border-radius: 50%;
+}
+
+.account-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Name {
+  font-size: 3rem;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
